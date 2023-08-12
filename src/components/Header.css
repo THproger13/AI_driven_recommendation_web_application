@@ -1,53 +1,49 @@
 /* Header.css */
 
-/* Header.css */
 .header {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;  /* Viewport width로 설정 */
+  overflow: hidden;  /* 오버플로우 숨기기 */
 }
 
 .header-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  margin: 0 auto; /* 가운데 정렬 및 양쪽 마진 설정 */
-  max-width: 1200px; /* 최대 너비 설정 */
-  padding: 20px; /* 위아래 여백 추가 */
+  width: 100%;
 }
 
 .header-video {
-  width: 100%;
-  height: auto;
+  width: 100vw;
+  height: 50vh;
   display: block;
-  max-height: 500px;
   object-fit: cover;
 }
 
+.content-container {
+  width: 100%;
+  padding-top: 20px;
+}
 
-.header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .left-content {
-    background-color: #deca91;
-    padding: 10px;
-    /* 좌측 상단 스타일링 */
-  }
-  
-  .center-content {
-    background-color: #f9f9f9;
-    padding: 10px;
-    /* 중앙 스타일링 */
-  }
-  
-  .right-content {
-    background-color: #f5f5f5;
-    padding: 10px;
-    /* 우측 상단 스타일링 */
-  }
-  body {
-    max-width: 800px;
-    margin: 0 auto; /* 가운데 정렬을 위해 사용 */
-  }
+.left-content, .center-content, .right-content {
+  padding: 0 30px;  /* 각 항목 사이의 간격 조절 */
+}
+
+.left-content {
+  text-align: left;  /* 좌측 내용 정렬 */
+}
+
+.center-content {
+  text-align: center;  /* 중앙 내용 정렬 */
+}
+
+.right-content {
+  text-align: right;  /* 우측 내용 정렬 */
+}
+
+body {
+  max-width: 800px;
+  margin: 0 auto; /* 중앙 정렬 */
+}
