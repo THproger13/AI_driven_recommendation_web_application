@@ -1,0 +1,59 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;  /* Viewport width로 설정 */
+  overflow: hidden;  /* 오버플로우 숨기기 */
+}
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  position: relative; 
+}
+
+.header-video {
+  width: 100vw;
+  height: 40vh;
+  display: block;
+  object-fit: cover;
+}
+
+.overlay-text {
+  position: absolute;
+  bottom: 25%;
+  left: 5%;
+  color: rgb(119, 217, 212);
+  font-family: 'Marck Script', cursive;
+  font-size: 24px;
+  font-weight: bold;
+  font-style: italic;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+
+.content-container {
+  width: 100%;
+  padding-top: 20px;
+}
+
+.left-content, .center-content, .right-content {
+  padding: 0 30px;  /* 각 항목 사이의 간격 조절 */
+}
+
+.left-content {
+  text-align: left;  /* 좌측 내용 정렬 */
+}
+
+.center-content {
+  text-align: center;  /* 중앙 내용 정렬 */
+}
+
+.right-content {
+  text-align: right;  /* 우측 내용 정렬 */
+}
